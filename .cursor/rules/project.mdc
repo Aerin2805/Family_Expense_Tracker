@@ -1,0 +1,18 @@
+---
+description: Core context for the Family Expense Tracker backend
+alwaysApply: true
+---
+
+# Project: Family Expense Tracker — Backend
+
+Stack: Node.js + Express + MongoDB (Mongoose) + JWT auth + pdfkit for PDF generation.
+
+Conventions:
+- Use ES modules (import/export), not require/module.exports.
+- Controllers go in src/controllers, routes in src/routes, models in src/models.
+- Every route that touches expense data must be protected by authMiddleware and scoped to req.user.id.
+- Use async/await with try/catch, never unhandled promise rejections.
+- Validate all request bodies before touching the database.
+- Keep responses as simple JSON objects, no nested envelopes.
+- This app is for a single non-technical family user — prioritize simplicity over flexibility. Do not add features, abstractions, or config options that were not explicitly requested.
+- Never invent npm packages. If unsure a package exists, ask before using it.
