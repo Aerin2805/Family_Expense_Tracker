@@ -1,4 +1,4 @@
-export const CATEGORIES = [
+export const EXPENSE_CATEGORIES = [
   'Groceries',
   'Transport',
   'Medical',
@@ -7,4 +7,9 @@ export const CATEGORIES = [
   'Personal',
   'Education',
   'Other',
+];
+
+export const INCOME_CATEGORIES = [
+  'Salary', 'Business', 'Gift', 'Interest',
+  'Rental', 'Refund', 'Other Income',
 ];
